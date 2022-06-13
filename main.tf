@@ -18,5 +18,8 @@ resource "google_composer_environment" "test" {
     project =  var.project_id
   name   = "example-composer-env"
   region = "us-central1"
+  config {
+    node_count = 4
+  }
 }
 
